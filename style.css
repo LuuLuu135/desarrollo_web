@@ -1,25 +1,33 @@
 body{
     header{ 
         background-color: peachpuff;
+        padding: 10px 20px;
         margin: -1%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
         img{
             width: 102px;
-            margin: 2%;
+            margin: 0%;
             
         }
-        
-        nav{
+        .nav-links{ 
+            display: flex;
+            gap: 50px; /* Espacio entre los textos, ajustable */
+        }
+
+        .nav-links a{
             font-family: Indie Flower;
-            font-size: 180%;
+            font-size: 1.8rem;
             color: #eb7d25;
-            float: right;
-            margin: 1%;
-            margin-top: 4%;
-            margin-right: 8%;
+            margin-left: 20px;
             font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
             
         }
-        nav:hover{ /*paso por encima cambia de color*/
+        .nav-links a:hover{ /*paso por encima cambia de color*/
             color:blueviolet;
             /*background-color: y aca el color o hex; -- esto es para que aparezca un recuadrode ese color al pasar el mouse*/
         } 
