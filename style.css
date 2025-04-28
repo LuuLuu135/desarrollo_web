@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html, body {
     height: 100%;
     margin: 0;
@@ -11,6 +16,7 @@ html, body {
     min-height: 100vh; /*altura de la pantalla*/
     }
 header{ 
+    width: 100%;
     background-color: peachpuff;
     padding: 10px 20px;
     display: flex;
@@ -123,7 +129,7 @@ footer {
         flex-direction: row; 
         align-items: center;
         justify-content: space-between; 
-        padding: 10px;
+        padding: 5px 10px;
         }
         
         .nav-links {
@@ -135,6 +141,6 @@ footer {
         }
         
         img {
-            width: 80px; 
+            width: 70px; 
         }
     }
