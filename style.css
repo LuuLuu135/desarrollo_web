@@ -6,8 +6,8 @@
 html, body {
     height: 100%;
     margin: 0;
-    display:flex;
-    flex-direction: column;
+    /*display:flex;
+    flex-direction: column;*/
 }
 .grid {
     display:grid;
@@ -16,7 +16,7 @@ html, body {
     min-height: 100vh; /*altura de la pantalla*/
     }
 header{ 
-    width: 100%;
+    /*width: 100%;*/
     background-color: peachpuff;
     padding: 10px 20px;
     display: flex;
@@ -129,7 +129,7 @@ footer {
         flex-direction: row; 
         align-items: center;
         justify-content: space-between; 
-        padding: 5px 10px;
+        padding: 10px;
         }
         
         .nav-links {
