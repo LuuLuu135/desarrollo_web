@@ -20,12 +20,16 @@ html, body {
 
 .grid {
     display:grid;
-    grid-template-areas: "header" "main" "footer";
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer";
     grid-template-rows: auto 1fr auto;
     min-height: 100vh; /*altura de la pantalla*/
     }
 
 header{ 
+    grid-area: header;
     /*width: 100%;*/
     background-color: peachpuff;
     padding: 10px 20px;
@@ -59,6 +63,10 @@ header{
 }
 
 main{
+    grid-area: main;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
     .div-imagen{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /*con autofit mantengo el diseño aunque achique o agrande la pantalla*/
@@ -66,7 +74,7 @@ main{
         gap: 1px;
         padding: 10px;
         justify-items: center;
-        }
+    }
         
     .imagen{
         display: flex;
@@ -96,7 +104,7 @@ main{
 }
 
 footer {
-    background-color: #f0f0f0;
+    background-color: #e6dada;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -117,7 +125,7 @@ footer {
     }
 
     .social-item i {
-        font-size: 24px;
+        font-size: 1.2em;
         color: #f06969;
         margin-bottom: 5px;
     }
@@ -132,6 +140,35 @@ footer {
         font-size: 0.5rem;
     }
 
+/*Style Contacto*/
+    .formulario{ 
+        display: grid;
+        justify-content: center;
+        input, textarea{
+            width: 50vh;
+            padding: 5px;
+            border: #f06969 solid 2px;
+            margin: 5px 0;
+        }
+
+        .consulta {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            box-sizing: border-box;
+            resize: vertical;
+            font-family: inherit;
+            font-size: 1rem;
+        }      
+        
+        .f-text{
+            font-size: 1rem;
+            font-family: 'Indie Flower';
+            color: #ee0e0e;
+        }
+    }
+
+/*Adaptacion*/
 @media (max-width: 768px) {
     .div-imagen {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -157,22 +194,3 @@ footer {
             width: 70px; 
         }
     }
-
-    .formulario{
-        display: grid;
-        justify-content: center;
-        input{
-            width: 50vh;
-            padding: 5px;
-            border: #f06969 solid 2px;
-            margin: 5px 0;
-        }
-        .consulta{
-            height: 10vw;
-        }
-        .f-text{
-            font-size: 1rem;
-            font-family: 'Indie Flower';
-            color: #ee0e0e;
-        }
-        }
