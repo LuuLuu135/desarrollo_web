@@ -6,8 +6,9 @@
 html, body {
     height: 100%;
     margin: 0;
-    /*display:flex;
-    flex-direction: column;*/
+    padding: 0;
+    display:flex;
+    flex-direction: column;
 }    
 .fondo{
     background-image:url(images/background.jpg);
@@ -67,6 +68,8 @@ main{
     min-height: 0;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    
     .div-imagen{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /*con autofit mantengo el diseño aunque achique o agrande la pantalla*/
