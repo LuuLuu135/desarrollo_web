@@ -8,13 +8,21 @@ html, body {
     margin: 0;
     /*display:flex;
     flex-direction: column;*/
+}    
+.fondo{
+    background-image:url(images/background.jpg);
+    background-size: 100%;
+    position: relative;
+
 }
+
 .grid {
     display:grid;
     grid-template-areas: "header" "main" "footer";
     grid-template-rows: auto 1fr auto;
     min-height: 100vh; /*altura de la pantalla*/
     }
+
 header{ 
     /*width: 100%;*/
     background-color: peachpuff;
@@ -73,13 +81,16 @@ main{
         font-family: Indie Flower;
         font-weight: bold;
         font-size: 1.1rem;
-        color: #df8484;
+        color: #929090;
         margin-top: 10px;
-        /*transition-duration: 10s;*/
-        }
-    /*.text:hover{
-        transform: rotate(11.1rem);
-    }*/
+        /*transition: all 0.3s ease-in-out ;  ease inn out hace que el movimiento sea mas suave*/
+        transition: opacity 0.5s ease, transform 0.5 ease;
+        opacity: 1;
+    }
+    .text:hover{
+        transform:translateY(-5px);
+        opacity: 0.5;
+    }
 }
 
 footer {
@@ -144,3 +155,22 @@ footer {
             width: 70px; 
         }
     }
+
+    .formulario{
+        display: grid;
+        justify-content: center;
+        input{
+            width: 50vh;
+            padding: 5px;
+            border: #f06969 solid 2px;
+            margin: 5px 0;
+        }
+        .consulta{
+            height: 10vw;
+        }
+        .f-text{
+            font-size: 1rem;
+            font-family: 'Indie Flower';
+            color: #ee0e0e;
+        }
+        }
