@@ -15,8 +15,6 @@ html, body {
     background-size: cover;
     /*position: relative;*/
     background-attachment: fixed;
-
-
 }
 
 .grid {
@@ -66,8 +64,8 @@ header{
 main{
     grid-area: main;
     min-height: 0;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     flex: 1;
     
     .div-imagen{
@@ -80,7 +78,7 @@ main{
     }
         
     .imagen{
-        display: flex;
+        /*display: flex;*/
         width: 410px;
         height: 250px;
         padding: 4px;
