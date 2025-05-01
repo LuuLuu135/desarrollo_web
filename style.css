@@ -72,7 +72,7 @@ main{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /*con autofit mantengo el diseño aunque achique o agrande la pantalla*/
         text-align: center;
-        gap: 1px;
+        /*gap: 1px;*/
         padding: 10px;
         justify-items: center;
     }
@@ -120,9 +120,10 @@ footer {
     }
 
     .social-item {
-        display: flex;
+        /*display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center;*/
+        justify-content: center;
     }
 
     .social-item i {
@@ -170,7 +171,7 @@ footer {
     }
 
 /*Adaptacion*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .div-imagen {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         padding: 5px;
